@@ -8,3 +8,4 @@ RUN pip install -r requirements.txt
 
 RUN pip list
 
+CMD ["python","main.py"]
