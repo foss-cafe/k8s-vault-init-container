@@ -29,7 +29,7 @@ class SecretsV2():
             else:
                 f = open(self.ENV_VARIABLES_PATH, "w+")
                 for i, j in data["data"]["data"].items():
-                    f.write("export %s=\"%s\"\n" % (i, j))
+                    f.write("%s=\"%s\"\n" % (i, j))
                 f.close()
             return True
         except Exception as e:
